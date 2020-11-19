@@ -2,15 +2,148 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a4bc0afbe.js" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="styles.css" />
     <title>Jon's site</title>
   </head>
   <body>
-    <navbar>
+    <nav class="nav">
+			<i class="fab fa-earlybirds"></i>
       <ul>
-        <li>About</li>
-        <li>Contact</li>
+        <li class="navbar-links"><a href="#about">About</a></li>
+        <li class="navbar-links"><a href="#projects">Projects</a></li>
+        <li class="navbar-links"><a href="#contact">Contact</a></li>
       </ul>
-    </navbar>
+    </nav>
+    <section class="main-home">
+      <div class="blob-container">
+        <img src="./img/blob.svg" alt="blob" />
+        <div class="blob-text">
+          <h1>Hi, I'm Jon.</h1>
+					<h2>I'm a full stack developer.</h2> 
+					<h2>I love using technology to help <span class="blob-text-third-line">solve problems and make</span> <span class="blob-text-final-line"> life interesting.</span></h2>
+						<div class="icons">
+						<a href="https://twitter.com/JonParnham"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/in/jon-parnham-b25648188/"><i class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/jonp2020"><i class="fab fa-github"></i></a>
+					</div>
+					</div>
+				</div>
+      </div>
+		</section>
+		<section class="main-about"><a id="about"></a>
+			<div class="about-container">
+				<h1>About</h1>
+				<div class="about-content">
+				<h3>I am a recent software development bootcamp graduate based in beautiful West Yorkshire looking to transition into a role in the tech industry. I have over twelve years’ experience in the education sector as a teacher and educational project manager in Asia, the Middle East and the UK. I’m passionate about using technology to develop creative solutions on projects that help make a difference to people’s lives. Having recently completed my full-time bootcamp training course with <a href="https://northcoders.com/" class="nc-link">Northcoders</a>, I am keen to continue developing my knowledge and experience in all things related to software and web development.</h3>
+				<img src="./img/jon_tokyo.jpg" alt=""Jon at teamLabs museum in Tokyo>
+			</div>
+			</div>
+		</section>
+		<section class="main-projects" id="projects">
+		
+			<div class="projects-container">
+				<h1>Recent projects</h1>
+			
+				<div class="project-card-wrapper">
+
+					<div class="project-card project-charity-bay">
+						<h3>CharityBay</h3>
+						<p>An open marketplace web application that allows users to sign up, browse, and buy and sell items with the proceeds going to charity. Developed over two weeks in a team of four as part of the Northcoders bootcamp graduation project.</p>
+						<p><strong>Technologies used:</strong></p>
+						<p>Built with <span class="tech-used">Express</span> on the back-end and <span class="tech-used">React</span> on the front-end. The web app utilises <span class="tech-used">AWS</span> for file-storage and <span class="tech-used">Firebase</span> for authentication. Hosted on <span class="tech-used">Netlify</span>.</p>
+						<p class="project-card-links-check-it">CHECK IT OUT:</p>
+						<div class="project-card-links-wrapper">
+							<div class="projects-card-links projects-card-links-code">
+								<a href="https://github.com/jonp2020/fe-charity-bay"><i class="fab fa-github"></i></a>
+								<a href="https://github.com/jonp2020/fe-charity-bay">Code</a>
+							</div>
+
+							<div class="projects-card-links projects-card-links-website">
+								<a href="https://charity-bay.netlify.app/"><i class="fas fab fa-globe"></i></a>
+								<a href="https://charity-bay.netlify.app/">Website</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card project-feccnews">
+						<h3>NC News: Front-end</h3>
+						<p>A Reddit style social media news aggregator. Users can read articles, sort them by topic and date and vote articles up or down. Users can also view comments from other users as well as add and delete their own comments.</p>
+						<p><strong>Technologies used:</strong></p>
+						<p>Built with <span class="tech-used">React</span>, <span class="tech-used">@reach/router</span> and <span class="tech-used">Axios</span>. Hosted on <span class="tech-used">Netlify</span>.</p>
+						<p class="project-card-links-check-it">CHECK IT OUT:</p>
+						<div class="project-card-links-wrapper">
+							<div class="projects-card-links projects-card-links-code">
+								<a href="https://github.com/jonp2020/fe-nc-news-jp"><i class="fab fa-github"></i></a>
+								<a href="https://github.com/jonp2020/fe-nc-news-jp">Code</a>
+							</div>
+							<div class="projects-card-links projects-card-links-website">
+								<a href="https://nc-news-jonp2020.netlify.app/"><i class="fas fab fa-globe"></i></a>
+								<a href="https://nc-news-jonp2020.netlify.app/">Website</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card project-bencnews">
+						<h3>NC News: Back-end</h3>
+						<p>A back-end API for a user-generated news style website. Built using RESTful API principles, the API accepts requests to get articles by topic, article id, and by a specific user. Articles can be sorted by popularity and most commented. The API also accepts requests to post, patch and delete comments.</p>
+						<p><strong>Technologies used:</strong></p>
+						<p>Built with <span class="tech-used">Node JS</span>, <span class="tech-used">Express</span>, <span class="tech-used">PostgreSQL</span> and <span class="tech-used">Knex</span>. Testing done with <span class="tech-used">Jest</span>. Hosted on <span class="tech-used">Heroku</span>.</p>
+						<p class="project-card-links-check-it">CHECK IT OUT:</p>
+						<div class="project-card-links-wrapper">
+							<div class="projects-card-links projects-card-links-code">
+								<a href="https://github.com/jonp2020/be-nc-news-jp"><i class="fab fa-github"></i></a>
+								<a href="https://github.com/jonp2020/be-nc-news-jp">Code</a>
+							</div>
+							<div class="projects-card-links projects-card-links-website">
+								<a href="https://nc-news-fe-jonp.herokuapp.com/"><i class="fas fab fa-globe"></i></a>
+								<a href="https://nc-news-fe-jonp.herokuapp.com/">Website</a>
+							</div>
+						</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="main-contact" id="contact">
+			<div class="contact-container">
+				<h1>Contact</h1>
+				<h3>Thanks for visiting my website. If you'd like to get in touch, you can follow any of the social media links at the bottom of the page, or you can fill out this contact form. It would be great to hear from you!</h3>
+				<div class="contact-form-wrapper">
+					<form class="contact-form" method="POST" data-netlify="true">
+						<div class="field emailName">
+						<input type="text" id="name" name="name" placeholder="Your name">
+					</div>
+				
+					<div class="field emailAddress">
+						<input type="email" id="email-address" name="emailAddress" placeholder="Email address">
+					</div>
+					<div class="field emailSubject">
+						<input type="text" id="email-subject" name="subject" placeholder="Subject">
+					</div>
+					<div class="field emailMessageContent">
+						<textarea class="field emailMessageContent" id="emailMessage" name="message" placeholder="Add your message" style="height:200px"></textarea>
+					</div>
+					<div class="field">
+						<div data-netlify-recaptcha="true"></div>
+					</div>
+						<input class="contact-form-btn" type="submit" value="Submit">
+					</form>
+				</div>
+
+			</div>
+		</section>
+		<footer>
+			<img class="footer-img" src="./img/svg.png" alt="sea-waves-footer">
+			<div class="icons-footer">
+				<a href="https://twitter.com/JonParnham"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/jon-parnham-b25648188/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/jonp2020"><i class="fab fa-github"></i></a>
+			</div>
+		</footer>
   </body>
 </html>
