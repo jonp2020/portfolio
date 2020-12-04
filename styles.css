@@ -101,9 +101,8 @@ nav > ul > li > a:visited {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  /* height: 900px;
-  width: 900px; */
-  /* position: fixed; */
+  max-width: 100%;
+  min-height: 500px;
 }
 
 .blob-container img {
@@ -352,7 +351,6 @@ nav > ul > li > a:visited {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  /* align-items: flex-start; */
   justify-content: space-evenly;
 }
 
@@ -380,8 +378,30 @@ nav > ul > li > a:visited {
   padding: 1rem;
 }
 
+.project-icon-mcr-crime {
+  transform: scaleX(-1);
+}
+
 .project-card * {
   padding: 0.3rem 0;
+}
+
+.project-card-header-img-wrapper {
+  display: flex;
+  padding: 0 0 0.3rem 0;
+}
+.project-icon {
+  top: 1%;
+  right: 2%;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+.project-card h3 {
+  align-self: flex-end;
+  margin-left: 0.5rem;
+  padding-bottom: 0;
 }
 
 .project-card p {
@@ -401,7 +421,6 @@ nav > ul > li > a:visited {
 
 .project-card-links-wrapper {
   display: flex;
-  /* justify-content: start; */
 }
 
 .project-card-links-wrapper div .fab {
@@ -502,6 +521,7 @@ textarea::placeholder {
   align-self: flex-start;
   padding: 0.5rem;
   border-radius: 4px;
+  margin-top: 0.5rem;
   background-color: #f1c21b;
   border: 1px solid rgb(216, 212, 212);
 }
