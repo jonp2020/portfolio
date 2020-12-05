@@ -321,7 +321,7 @@ nav > ul > li > a:visited {
   margin-bottom: 1rem;
 }
 
-.about-container h3 {
+.about-container h2 {
   color: #fff;
   line-height: 2rem;
   margin-bottom: 3rem;
@@ -336,7 +336,7 @@ nav > ul > li > a:visited {
 }
 
 @media only screen and (max-width: 420px) {
-  .about-container h3 {
+  .about-container h2 {
     font-size: 1rem;
   }
   .about-container img {
@@ -398,8 +398,9 @@ nav > ul > li > a:visited {
   padding: 0;
 }
 
-.project-card h3 {
+.projects-card-header {
   align-self: flex-end;
+  font-size: 1.2rem;
   margin-left: 0.5rem;
   padding-bottom: 0;
 }
@@ -412,7 +413,7 @@ nav > ul > li > a:visited {
 }
 
 .tech-used {
-  color: #f7750a;
+  color: #4c00ff;
 }
 
 .project-card-links-check-it {
@@ -470,8 +471,9 @@ nav > ul > li > a:visited {
   color: #000;
 }
 
-.contact-container h3 {
+.contact-container h2 {
   align-self: flex-start;
+  font-size: 1.2rem;
 }
 
 .contact-form-wrapper {
