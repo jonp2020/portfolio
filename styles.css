@@ -145,7 +145,8 @@ nav > ul > li > a:visited {
 .main-intro-sentence {
   display: block;
 }
-.icons {
+.icons-list {
+  list-style-type: none;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
@@ -566,6 +567,11 @@ footer img {
   padding: 1rem 0;
 }
 
+.icons-footer-list {
+  display: flex;
+  list-style-type: none;
+}
+
 .icons-footer .fab {
   font-size: 2rem;
   margin-right: 1.5rem;
@@ -592,4 +598,13 @@ footer img {
   .icons-footer {
     padding: 2.7rem 0;
   }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
