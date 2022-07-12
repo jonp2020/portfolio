@@ -6,6 +6,10 @@
   /* border: 1px solid red; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   display: flex;
   background-color: #000;
